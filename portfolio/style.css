@@ -128,7 +128,6 @@ body {
 /*Header styles end*/
 
 .main {
-    margin-bottom: 100px;
 	position: relative;
 }
 
@@ -146,7 +145,7 @@ body {
 }
 
 .hero__info{
-	margin-left: 80px;
+	margin-left: 60px;
 	width: 500px;
 
 }
@@ -184,17 +183,11 @@ body {
 	transition: 0.3s;
 	height: 55px;
 	width: 220px;
-	
 }
 
 .bt__solid:hover {
 	color: white;
 }
-
-
-
-
-
 
 /*Hero styles end*/
 
@@ -289,15 +282,9 @@ body {
 	left: 40%;
 }
 	
-.items__icon:hover {
-	filter: invert(100%) sepia(0%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
-}
-
-
 .portfolio{
 	height: 1500px;
 	padding-top: 100px;
-
 }
 
 .button__items{
@@ -305,7 +292,6 @@ body {
 	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
-
 }
 
 
@@ -322,7 +308,6 @@ body {
 	height: 55px;
 	width: 220px;
 	padding: 0px;
-
 }
 
 .bt__border:hover {
@@ -335,12 +320,10 @@ body {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items:center;
-	gap: 10px;
+	gap: 25px;
 	padding-top: 60px;
-	margin: 0px;
+	margin: 0 -2px;
 }
-
-
 
 .video{
 	height: 945px;
@@ -389,7 +372,6 @@ body {
 	border: 2px;
 	border-style: solid;
 	border-color: #BDAE82;
-	
 }
 
 .price__title{
@@ -444,7 +426,6 @@ body {
 	position: relative;
 	left: 50%;
 	transform: translate(-50%, 0);
-	
 }
 
 .bt__price:hover {
@@ -459,21 +440,152 @@ body {
 
 .contacts{
 	height: 700px;
-	padding-top: 100px;
-	background-image: url(../portfolio/assets/img/jpg/contacts.jpg);background-position: center -90px;
-  	background-repeat: no-repeat;
+	background-image: url(../portfolio/assets/img/jpg/contacts.jpg); background-size: auto 700px;
+	background-position: center center;   
 	border:0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
+
+.contact__container {
+	width: 450px;
+}
+
+.title__contact{
+	display: flex;
+	justify-content: left;
+	position: relative;
+	align-items: flex-start;
+	font-family: Merriweather;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 80px;
+	text-align: center;
+	color:#BDAE82;
+	width: 450px;
+	padding-top: 0px;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	height: 80px;
+}
+
+.input__text{
+	height: 50px;
+	width: 450px;
+	border-color: #BDAE82;
+	border-style:solid;
+	background-color: transparent;
+	margin-bottom: 20px;
+}
+
+::placeholder {
+	font-family: inherit;
+	color: #bdae82;
+	font-size: 20px;
+	padding-left: 20px;
+  }
+
+.message{
+	color: #bdae82;
+	font-family: 'Inter';
+	font-style: normal;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 40px;
+	height: 100px;
+	width: 450px;
+	border-color: #BDAE82;
+	border-style:solid;
+	background-color: transparent;
+	margin-bottom: 30px;
+	padding-left: 20px;
+}
+
+.bt__contact{
+	padding: 0px;
+	font-family: Inter;
+	font-size: 20px;
+	line-height: 40px;
+	color:black;
+	background-color:#BDAE82;
+	cursor: pointer;
+	text-align: center;
+	border: none;
+	transition: 0.3s;
+	height: 55px;
+	width: 220px;
+	position: relative;
+	left: 50%;
+	transform: translate(-100%, 0);
+}
+
+.bt__contact:hover {
+	color: white;
+}
+
 
 .footer{
 	height: 150px;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	width: 1440px;
 }
 
 .footer__container{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 auto;
 	color: #fff;
+	height: 50px;
 }
 
+.footer__list{
+	display: flex; /*преобразует элементы в общий контейнер на всю ширину экрана*/
+	justify-content: flex-end; /*элементы разлещаются с правой стороны*/
+	list-style: none;
+	align-items:flex-end;
+	margin: 0;
+	padding: 0;
+}
+
+.footer__link{
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		color:white;
+		text-decoration: none;
+		transition: 0.3s;
+		margin: 0;
+	}
+
+.footer__link, .git:hover{
+	color: #BDAE82;
+}
+
+.footer__data{
+	font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		color:white;
+		margin-left: 20px;
+		word-spacing: 20px; 
+		width: 182px;
+
+}
+
+.git{
+	font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 20px;
+		color:white;
+		text-decoration: none;
+		transition: 0.3s;
+}
+
+.footer__it{
+	margin-right: 20px;
+}
