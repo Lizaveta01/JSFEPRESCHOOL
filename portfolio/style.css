@@ -34,7 +34,6 @@ html {
 		 url('../portfolio/assets/fonts/inter-v7-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
-
 body {
 	display: flex;
 	flex-direction: column;
@@ -57,9 +56,7 @@ body {
 	padding: 0 20px;
 }
 
-
 /*Header styles start*/
-	
 
 .header__container{
 	height: 90px;
@@ -67,17 +64,15 @@ body {
 	justify-content: space-between;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	
-
 	background-image: url('./assets/img/jpg/intro-bg.jpg');
 	background-repeat: no-repeat;
 	background-position: top;
 	border: 0;
   }
 
-
 .header__logo{
 	transition: 0.3s;
+	cursor: pointer;
 }
 
 .header__logo:hover {
@@ -114,6 +109,7 @@ body {
 	text-decoration: none;
 	transition: 0.3s;
 }
+
 .header__link:hover, .header__link:focus, .header__link:active{
 	color:#BDAE82
 }
@@ -191,12 +187,11 @@ body {
 
 /*Hero styles end*/
 
-/*Skills*/
+/*Skills styles start*/
 
 .skills{
 	height: 482px;
 	padding-top: 100px;
-
 }
 
 .section__title {
@@ -204,8 +199,8 @@ body {
 	justify-content: center;
 	height: 80px;
 	margin-bottom: 60px;
-	
 }
+
 .title{
 	display: flex;
 	justify-content: center;
@@ -218,7 +213,6 @@ body {
 	text-align: center;
 	color:#BDAE82;
 	width: 50%;
-
 }
 
 .title::before{
@@ -252,7 +246,6 @@ body {
 	padding: 0px 20px;
 }
 
-
 .item__title{
 	font-family: Inter;
 	font-weight: 700;
@@ -282,6 +275,10 @@ body {
 	left: 40%;
 }
 	
+/*Skills styles end*/
+
+/*Portfolio styles start*/
+
 .portfolio{
 	height: 1500px;
 	padding-top: 100px;
@@ -293,7 +290,6 @@ body {
 	flex-wrap: wrap;
 	align-items: center;
 }
-
 
 .bt__border{
 	font-family: Inter;
@@ -325,6 +321,10 @@ body {
 	margin: 0 -2px;
 }
 
+/*Portfolio styles end*/
+
+/*video styles start*/
+
 .video{
 	height: 945px;
 	padding-top: 100px;
@@ -351,6 +351,10 @@ body {
 .bt__player:hover {
 	filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87%);
 	}
+
+/*Video styles end*/
+
+/*Price styles start*/
 
 .price{
 	height: 845px;
@@ -432,15 +436,14 @@ body {
 	color: white;
 }
 
+/*Price styles end*/
 
-
-
-
-
+/*Contacts styles start*/
 
 .contacts{
 	height: 700px;
-	background-image: url(../portfolio/assets/img/jpg/contacts.jpg); background-size: auto 700px;
+	background-image: url(../portfolio/assets/img/jpg/contacts.jpg); 
+	background-size: auto 700px;
 	background-position: center center;   
 	border:0;
 	display: flex;
@@ -499,7 +502,6 @@ body {
 	border-style:solid;
 	background-color: transparent;
 	margin-bottom: 30px;
-	padding-left: 20px;
 }
 
 .bt__contact{
@@ -524,6 +526,9 @@ body {
 	color: white;
 }
 
+/*Contacts styles end*/ 
+
+/*Footer styles start*/
 
 .footer{
 	height: 150px;
@@ -550,15 +555,15 @@ body {
 }
 
 .footer__link{
-		font-family: 'Inter';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 20px;
-		color:white;
-		text-decoration: none;
-		transition: 0.3s;
-		margin: 0;
-	}
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	color:white;
+	text-decoration: none;
+	transition: 0.3s;
+	margin: 0;
+}
 
 .footer__link, .git:hover{
 	color: #BDAE82;
@@ -566,26 +571,28 @@ body {
 
 .footer__data{
 	font-family: 'Inter';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 20px;
-		color:white;
-		margin-left: 20px;
-		word-spacing: 20px; 
-		width: 182px;
-
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	color:white;
+	margin-left: 20px;
+	word-spacing: 20px; 
+	width: 182px;
 }
 
 .git{
 	font-family: 'Inter';
-		font-style: normal;
-		font-weight: 400;
-		font-size: 20px;
-		color:white;
-		text-decoration: none;
-		transition: 0.3s;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	color:white;
+	text-decoration: none;
+	transition: 0.3s;
 }
 
 .footer__it{
 	margin-right: 20px;
 }
+
+
+/*Footer styles end*/
