@@ -538,8 +538,7 @@ body.lock::before {
 	width: 220px;
 	padding: 0px;
 }
-
-.bt__border:hover {
+.bt__border.active {
 	color: rgb(0, 0, 0);
 	background-color:#BDAE82;
 }

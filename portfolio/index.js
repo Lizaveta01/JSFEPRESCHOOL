@@ -32,7 +32,7 @@ function changeImage(event) {
 		}
   }
 
-  portfolioBtns.addEventListener('click', changeImage);
+ portfolioBtns.addEventListener('click', changeImage);
 
 
   function changeClassActive (event) {
@@ -45,5 +45,5 @@ function changeImage(event) {
 	}
 }
 
-portfolioBtns.addEventListener('click', changeImage);
+portfolioBtns.addEventListener('click', changeClassActive);
 
