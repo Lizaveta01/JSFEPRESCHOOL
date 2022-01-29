@@ -230,7 +230,7 @@ body.lock::before {
 .header__link:hover, .header__link:focus, .header__link:active{
 	color:#BDAE82
 }
-.header__link__lang{
+.header__link__lang-en{
 	font-family: 'Inter';
 	font-style: normal;
 	font-weight: 400;
@@ -239,15 +239,33 @@ body.lock::before {
 	text-decoration: none;
 	transition: 0.3s;
 }
-.header__link__lang:hover, .header__link__lang:focus, .header__link:active{
+.header__link__lang-en.active{
 	color:#BDAE82
 }
+.header__link__lang-ru{
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	color:white;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.header__link__lang-ru.active{
+	color:#BDAE82
+}
+
+/* .header__link__lang-en:hover, .header__link__lang-ru:focus, .header__link:active{
+	color:#BDAE82
+} */
 .header__lang{
 	display: flex;
 	justify-content: space-between;
 	width: 70px;
 	align-items: center;
 }
+
+
 /*@media (max-width: 768px){
 .icon-menu {
     display: block;
