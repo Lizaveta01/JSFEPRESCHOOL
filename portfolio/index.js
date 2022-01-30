@@ -142,7 +142,7 @@ const i18 = document.querySelectorAll('[data-i18]');
 console.log(langEn);
 console.log(langRu);
 console.log(i18);
-
+//активация кнопок языка
 function changeClassActiveLang (event) {
 	if (event.target.classList.contains('header__link__lang-en')) {
 	event.target.classList.add('active');
@@ -154,9 +154,8 @@ function changeClassActiveLang (event) {
 	console.log('ru lang')}
 }
 
-
 lang.addEventListener('click', changeClassActiveLang);
-
+//функция перевода страницы
 function getTranslate(lang) { 
 	i18.forEach((elem) => { 
 			elem.textContent = i18Obj[lang][elem.dataset.i18];
@@ -164,7 +163,6 @@ function getTranslate(lang) {
 		console.log('done!');
 	}
 	
-
 langEn.addEventListener('click', () => getTranslate('en'));
 langRu.addEventListener('click', () =>  getTranslate('ru'));
 

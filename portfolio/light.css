@@ -1,0 +1,24 @@
+:root {
+	--body-color: #fff;
+	--text-color: #000;
+	--link-color:#000;
+	--link-color-hover:#fff;
+	--title-chapter:#000;
+
+	--botton-color-solid:#fff;
+	--botton-color-solid-active:#000;
+	--button-color: #BDAE82;
+	--button-text:#000;
+	--button-text-active:#BDAE82;
+	--button-color-active:#000;
+
+	--price-text:#000;
+	--price-value:#000;
+	--input-border:#BDAE82;
+	--input-backgroud-color:(255, 255, 255, 50%);
+	--placeholder-border-color:#BDAE82;
+	--placeholder-backgroud-color:(255, 255, 255, 50%);
+	
+	--hamburger-line-color:#000;
+	--hamburger-background-color:#fff;
+  }
