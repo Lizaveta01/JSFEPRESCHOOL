@@ -4,21 +4,54 @@
 	--link-color:#000;
 	--link-color-hover:#fff;
 	--title-chapter:#000;
+	--title-background-color:#fff;
+	--subtitle-color:#000;
 
 	--botton-color-solid:#fff;
-	--botton-color-solid-active:#000;
+	--botton-color-solid-active:#BDAE82;
 	--button-color: #BDAE82;
+
 	--button-text:#000;
 	--button-text-active:#BDAE82;
 	--button-color-active:#000;
+	--button-color-border:#BDAE82;
+
+	--button-price-text:#000;
+	--button-price-color:#BDAE82;
+	--button-price-text-active:#BDAE82;
+	--button-price-color-active:#000;
 
 	--price-text:#000;
 	--price-value:#000;
 	--input-border:#BDAE82;
-	--input-backgroud-color:(255, 255, 255, 50%);
+	--input-backgroud-color:rgb(255, 255, 255, 0.5);
 	--placeholder-border-color:#BDAE82;
-	--placeholder-backgroud-color:(255, 255, 255, 50%);
+	--placeholder-text-color:#000;
+	--placeholder-backgroud-color:rgb(255, 255, 255, 0.5);
 	
 	--hamburger-line-color:#000;
 	--hamburger-background-color:#fff;
   }
+  .header__theme-logo{
+   background-image: url('./assets/img/svg/moon_dark-theme.svg');
+   width: 40px;
+ }
+
+  .header__container{
+	background-image: url('./assets/img/jpg/hero-image_white-theme.jpg');
+  }
+  .header__logo{
+	background-image: url('./assets/img/svg/logo_black_white-theme.svg');
+}
+.hero__container{
+	background-image: url('./assets/img/jpg/hero-image_white-theme.jpg');
+}
+.bt__solid:hover {
+	background-color:var(--button-color-active);
+}
+.contacts{
+	background-image: url(../portfolio/assets/img/jpg/contacts_white-theme.jpg); 
+}
+.header__logo1{
+	filter: invert(1);
+}

@@ -166,3 +166,15 @@ function getTranslate(lang) {
 langEn.addEventListener('click', () => getTranslate('en'));
 langRu.addEventListener('click', () =>  getTranslate('ru'));
 
+//переключение тем
+let switchMode = document.querySelector('.header__theme-logo');
+
+switchMode.onclick = function () {
+	let theme = document.getElementById('theme');
+
+	if (theme.getAttribute('href') == 'style.css') {
+		theme.href = 'light.css';
+	} else{
+		theme.href = 'style.css';
+	}
+};
