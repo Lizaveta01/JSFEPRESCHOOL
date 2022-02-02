@@ -1,0 +1,143 @@
+/* обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+body {
+	overflow-x:hidden;
+	display: block;
+	line-height: 1;
+	font-size: 14px;
+	color: #FFF;
+	background-color:#000;
+	font-weight: 400;
+	font-family: Fira Sans;
+	margin: 20px;
+} 
+
+
+/*--------MAIN---------------------------------------------------------------------------*/
+.page{
+	
+}
+
+#background{
+    position: absolute; 
+	height: 100%;
+	width: 100%;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	margin: auto;
+	filter: blur(5px);
+	z-index: -1;
+}
+
+.container{
+	position: absolute;
+	background-color: #000;
+	width: 300px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+	margin: auto;
+	border-radius: 20px;
+	box-shadow: -1px -20px 80px 1px rgb(3, 93, 103);
+	overflow: hidden;
+}
+
+#poster{
+	position: absolute;
+	width: 180%;
+	top:0px;
+}
+
+.container__info{
+	padding-bottom: 80px;
+	z-index: 3;
+}
+
+.info-song{
+	bottom: 0px;
+	margin-bottom: 20px;
+}
+/*--------BUTTONS---------------------------------------------------------------------------*/
+button {
+
+	background-color: transparent;
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 200px;
+}
+.play-btn {
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('/assets/img/svg/play_arrow.svg')
+}
+.pause-btn {
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('/assets/img/svg/pause.svg')
+}
+.next-btn {
+	
+}
+.last-btn {
+
+}
+
+
+/*--------FOOTER---------------------------------------------------------------------------*/
+
+.footer{
+	position: fixed;
+	width: 100%;
+	height: 5%;
+	top: 95%;
+	background-color:#000;
+}
+.footer__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
