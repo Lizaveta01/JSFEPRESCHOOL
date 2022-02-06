@@ -10,6 +10,9 @@ const nameArtist = document.querySelector('.info-song__subtitle');
 const progressContainer = document.querySelector('.progress__container');
 const progress = document.querySelector('.progress');
 
+const currentTime = document.querySelector('.current-time');
+const durationTime = document.querySelector('.duration-time');
+
 let isPlay = false;
 let playNum = 0;
 const playList = ['demons', 'september'];
@@ -70,26 +73,18 @@ function playAudio() {
   if (!isPlay) {
 	audio.play();
 	isPlay = true;
-	playBtn.classList.add('pause-btn')
-	imageTreck.classList.add('active');
+	playBtn.classList.add('pause-btn');
+	imageTreck.style = 'transform: scale(1.15)'
   } else {
 	audio.pause();
 	isPlay = false;
-	playBtn.classList.remove('pause-btn')
+	playBtn.classList.remove('pause-btn');
+	imageTreck.style = 'transform: scale(1)'
   }
 }
 
 playBtn.addEventListener('click', playAudio);
 
-
-function changeImage(event) {
-	if (event.target.classList.contains('bt__border')) {
-		console.log(event.target);
-		portfolioImages.forEach((img, index) => {
-			img.src = `assets/img/jpg/${event.target.dataset.season}/${index + 1}.jpg`
-		});
-	}
-}
 
 //плеер
 function updateProgress(e) {

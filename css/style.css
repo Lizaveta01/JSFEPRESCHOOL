@@ -79,12 +79,11 @@ body {
 
 #poster{
 	position: absolute;
-	width: 180%;
+	width: 150%;
 	top:0px;
+	transition: 2s;
 }
-#poster.active{
-	animation: 
-}
+
 
 .container__info{
 	padding-bottom: 10px;
@@ -96,6 +95,7 @@ body {
     flex-direction: column;
 	padding: 0px 20px;
 	padding-bottom: 10px;
+	z-index: 10;
 }
 
 .info-song{
@@ -167,19 +167,45 @@ button {
 	border-radius: 5px;
 }
 
+
+.time{
+	display: flex;
+	justify-content: space-between;
+	width: inherit;
+}
+.current-time {
+
+}
+.duration-time {
+
+}
 /*--------FOOTER---------------------------------------------------------------------------*/
 
 .footer{
 	position: fixed;
 	width: 100%;
-	height: 5%;
-	top: 95%;
+	bottom: 0;
 	left:0;
-	background-color:#000;
+	background:linear-gradient(to bottom right, rgb(134, 142, 238), rgb(146, 88, 149));
 }
 .footer__container{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin: 10px 20px;
 
 }
+
+.rss {
+	width: 121px;
+	height: 45px;
+	background-image: url('/assets/img/svg/rs_school_js.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	z-index: 7;
+  }
+  .nav-link{
+	  color: #FFF;
+  }
+
+  
