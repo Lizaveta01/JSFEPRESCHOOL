@@ -10,7 +10,7 @@ const nameArtist = document.querySelector('.info-song__subtitle');
 const progressContainer = document.querySelector('.progress__container');
 const progress = document.querySelector('.progress');
 
-const currentTime = document.querySelector('.current-time');
+const nowTime = document.querySelector('.current-time');
 const durationTime = document.querySelector('.duration-time');
 
 let isPlay = false;
@@ -41,11 +41,6 @@ function switcherImage() {
 	imageBack.src = `/assets/img/jpg/${playList[playNum]}.jpg`;
 }
 
-function switcherImage() {
-	console.log('работает!');
-	imageTreck.src = `/assets/img/jpg/${playList[playNum]}.jpg`;
-	imageBack.src = `/assets/img/jpg/${playList[playNum]}.jpg`;
-}
 
 function playNext() {
 	if (playNum >= playList.length -1) {
@@ -75,6 +70,7 @@ function playAudio() {
 	isPlay = true;
 	playBtn.classList.add('pause-btn');
 	imageTreck.style = 'transform: scale(1.15)'
+
   } else {
 	audio.pause();
 	isPlay = false;
@@ -92,6 +88,10 @@ function updateProgress(e) {
 	const progressPercent = (currentTime / duration) * 100;
 	progress.style.width = `${progressPercent}%`;
 	console.log('работает3!')
+	nowTime.textContent = getTimeCodeFromNum(currentTime);
+	durationTime.textContent = getTimeCodeFromNum(duration);
+	console.log(duration)
+	console.log(currentTime)
 }
 
 audio.addEventListener('timeupdate', updateProgress);
@@ -107,3 +107,14 @@ progressContainer.addEventListener('click', setProgress);
 
 //автовоспроизведение следующей песни
 audio.addEventListener('ended', playNext);
+
+//перевод времени
+function getTimeCodeFromNum(time) {
+		let minutes = Math.floor( time / 60 )
+		let timeForSeconds = time - ( minutes * 60 ) // seconds without counted minutes 
+		let seconds = Math.floor( timeForSeconds )
+		let secondsReadable = seconds > 9 ? seconds : `0${seconds}` // To change 2:2 into 2:02
+		return `${minutes}:${secondsReadable}`
+	 }
+	
+
