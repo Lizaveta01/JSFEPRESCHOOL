@@ -42,9 +42,7 @@ body {
 
 
 /*--------MAIN---------------------------------------------------------------------------*/
-.page{
-	
-}
+
 
 #background{
     position: absolute; 
@@ -132,14 +130,14 @@ button {
 	height: 40px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url('audio-player/assets/img/svg/play_arrow.svg')
+	background-image: url('/audio-player/assets/img/svg/play_arrow.svg')
 }
 .pause-btn {
 	width: 40px;
 	height: 40px;
 	background-repeat: no-repeat;
 	background-position: center;
-	background-image: url('audio-player/assets/img/svg/pause.svg')
+	background-image: url('/audio-player/assets/img/svg/pause.svg')
 }
 .next-btn {
 	
@@ -198,7 +196,7 @@ button {
 .rss {
 	width: 121px;
 	height: 45px;
-	background-image: url('audio-player/assets/img/svg/rs_school_js.svg');
+	background-image: url('/audio-player/assets/img/svg/rs_school_js.svg');
 	background-size: contain;
 	background-repeat: no-repeat;
 	z-index: 7;

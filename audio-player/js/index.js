@@ -22,7 +22,7 @@ const listArtist =['Imagine Dragons', 'Earth wind fire'];
 
 
 function switcherTreck(playNum) {
-	audio.src = `audio-player/assets/song/${playList[playNum]}.mp3`;
+	audio.src = `/audio-player/assets/song/${playList[playNum]}.mp3`;
 	isPlay = false;
 	switcherImage();
 	playAudio();	
@@ -37,8 +37,8 @@ function switcherText() {
 
 function switcherImage() {
 	console.log('работает!');
-	imageTreck.src = `audio-player/assets/img/jpg/${playList[playNum]}.jpg`;
-	imageBack.src = `audio-player/assets/img/jpg/${playList[playNum]}.jpg`;
+	imageTreck.src = `/audio-player/assets/img/jpg/${playList[playNum]}.jpg`;
+	imageBack.src = `/audio-player/assets/img/jpg/${playList[playNum]}.jpg`;
 }
 
 
