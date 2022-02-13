@@ -29,7 +29,7 @@ function changeLang (event){
 		}
 }
 
-//Выриант 2
+//Выриант 2 (основной)
 jokeBtn.addEventListener('click', getData);
 
 async function getData () {
