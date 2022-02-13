@@ -7,3 +7,5 @@ https://rolling-scopes-school.github.io/lizaveta01-JSFEPRESCHOOL/portfolio/
 # Audio-player
 https://rolling-scopes-school.github.io/lizaveta01-JSFEPRESCHOOL/audio/
 
+# Quotes
+https://rolling-scopes-school.github.io/lizaveta01-JSFEPRESCHOOL/quotes/
