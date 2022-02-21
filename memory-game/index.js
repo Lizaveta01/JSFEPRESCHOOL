@@ -90,6 +90,7 @@ function showResult(){
 	result.classList.remove('hidden');
 	finalStep.textContent = step + " step";
 	finalTime.textContent = `0${hrs} : 0${min} : ${sec}` + " sec";
+	localStorage.setItem(toString(finalTime), toString(finalStep));
 	// finalTime.textContent = ;
 }
 //перезапуск игры
@@ -170,6 +171,7 @@ function timer() {
 function stopTimer() {
     clearTimeout(t);
 }
+
 
 
 cards.forEach(card => card.addEventListener('click', flipCard));
