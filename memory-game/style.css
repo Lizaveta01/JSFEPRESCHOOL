@@ -65,8 +65,8 @@ img {
 	flex-wrap: wrap;
 	align-items:center;
 	justify-content: space-around;
-	width: 640px;
-	height: 640px;
+	width: 500px;
+	height: 500px;
 	margin: auto;
 	perspective: 1000px;
 }
@@ -106,7 +106,7 @@ img {
 
 /*--------STATUS-BAR----------------------------------------------------------------------------------*/
 #state {
-	background: #6186aa;
+	background: rgb(78, 78, 255);
 
 	background-size: 250%;
 	width: 230px;
@@ -130,9 +130,27 @@ img {
   }
   
   #score::after {
-	content: " points";
+	content: " steps";
   }
 
+  .start-game__button{
+	margin-top: 14px;
+	background-color: rgb(255, 255, 255);
+	color:blue;
+	font-size: 18px;
+	border-radius: 4px;
+	width: 140px;
+	height: 34px;
+}
+.start-game__button:active{
+	background-color: blue;
+	color:rgb(255, 255, 255);
+}
+.start-game__button:hover{
+	background-color: rgb(26, 255, 0);
+	color:rgb(255, 255, 255);
+	font-weight: 700;
+}
 /*--------END GAME POSTER---------------------------------------------------------------------------------*/
 .result {
 	margin-top: 240px;
@@ -155,7 +173,16 @@ img {
 }
 .final {
 	height: 50px;
-	font-size: 24px;
+	margin: 6px 0px;
+}
+.final-time {
+	content: " sec";
+	margin: 6px auto;
+}
+.final-step {
+	content: " step";
+	margin: 6px auto;
+
 }
 .again {
 	background-color: blue;
@@ -179,6 +206,7 @@ img {
 	align-items:center;
 	height: 60px;
 	width: 100%;
+	position: absolute;
 }
 .footer-year{
 	font-size: 16px;
