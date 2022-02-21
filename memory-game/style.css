@@ -117,9 +117,6 @@ img {
 	font-size: 16px;
   }
 
-  #time {
-
-  }
   
   #time::after {
 	content: " sec";
@@ -216,13 +213,16 @@ img {
 	width: 100%;
 	position: absolute;
 }
+
 .footer-year{
 	font-size: 16px;
 	padding-left: 70px;
 }
+
 .footer-year:hover{
 	color:rgb(243, 239, 0);
 }
+
 .nav-link {
 	/* filter: invert(100%); */
 	width: 40px;
@@ -231,6 +231,7 @@ img {
 	background-repeat: no-repeat;
 	background-size:contain;
 }
+
 .rss {
 	width: 121px;
 	height: 45px;
