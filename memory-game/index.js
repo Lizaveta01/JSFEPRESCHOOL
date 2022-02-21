@@ -26,6 +26,7 @@ function stepCount(){
 
 //нахождение и переворот первой и воторой карты
 function flipCard() {
+	console.log('flip');
 	if (lockBord) return
 	this.classList.add('flip');
 	stepCount();
@@ -105,14 +106,15 @@ function resetGame(){
 	min = 0;
 	hrs = 0;
 	timer();
+	win =0;
+	
+cards.forEach(card => card.addEventListener('click', flipCard));
 }
 
 // показать предыдущие результаты
 function showLegent(){
 	
 }
-cards.forEach(card => card.addEventListener('click', flipCard));
-button.addEventListener('click', resetGame);
 
 //реализация секундомера
 let sec = 0;
@@ -148,8 +150,12 @@ function startTimer (){
 	}
 }
 
-buttonStart.addEventListener('click',  timer) 
+buttonStart.addEventListener('click',  timer);
+buttonStart.onclick = hiddenButton;
 
+function hiddenButton(){
+	buttonStart.classList.add('hidden')
+}
 //обнуление
  function resetTime() {
     gameTime.textContent = "00:00:00";
@@ -164,3 +170,7 @@ function timer() {
 function stopTimer() {
     clearTimeout(t);
 }
+
+
+cards.forEach(card => card.addEventListener('click', flipCard));
+button.addEventListener('click', resetGame);
