@@ -9,3 +9,6 @@ https://rolling-scopes-school.github.io/lizaveta01-JSFEPRESCHOOL/audio/
 
 # Quotes
 https://rolling-scopes-school.github.io/lizaveta01-JSFEPRESCHOOL/quotes/
+
+# Memory game
+https://rolling-scopes-school.github.io/lizaveta01-JSFEPRESCHOOL/memory-game/
