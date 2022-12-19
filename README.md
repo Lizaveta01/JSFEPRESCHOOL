@@ -2,13 +2,13 @@
 Private repository for @lizaveta01
 
 # Portfolio 1
-https://rolling-scopes-school.github.io/lizaveta01-JSFEPRESCHOOL/portfolio/
+https://lizaveta01.github.io/JSFEPRESCHOOL/portfolio/
 
 # Audio-player
-https://rolling-scopes-school.github.io/lizaveta01-JSFEPRESCHOOL/audio/
+https://lizaveta01.github.io/JSFEPRESCHOOL/audio/
 
 # Quotes
-https://rolling-scopes-school.github.io/lizaveta01-JSFEPRESCHOOL/quotes/
+https://lizaveta01.github.io/JSFEPRESCHOOL/quotes/
 
 # Memory game
-https://rolling-scopes-school.github.io/lizaveta01-JSFEPRESCHOOL/memory-game/
+https://lizaveta01.github.io/JSFEPRESCHOOL/memory-game/
